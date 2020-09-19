@@ -1,0 +1,147 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.drs"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\DRS\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="24" />
+9-->D:\DRS\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the "MyLocation" functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\DRS\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\DRS\app\src\main\AndroidManifest.xml:9:22-76
+16
+17    <!-- Include required permissions for Google Maps API to run. -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:22-64
+20
+21    <uses-feature
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+22        android:glEsVersion="0x00020000"
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+23        android:required="true" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+24
+25    <application
+25-->D:\DRS\app\src\main\AndroidManifest.xml:11:5-40:19
+26        android:allowBackup="true"
+26-->D:\DRS\app\src\main\AndroidManifest.xml:12:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\3f381a8d6616967ca52a9e5946021e4b\core-1.1.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:icon="@mipmap/ic_launcher"
+30-->D:\DRS\app\src\main\AndroidManifest.xml:13:9-43
+31        android:label="@string/app_name"
+31-->D:\DRS\app\src\main\AndroidManifest.xml:14:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->D:\DRS\app\src\main\AndroidManifest.xml:15:9-54
+33        android:supportsRtl="true"
+33-->D:\DRS\app\src\main\AndroidManifest.xml:16:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->D:\DRS\app\src\main\AndroidManifest.xml:17:9-40
+36        <activity android:name="com.example.drs.DescriptionActivity" />
+36-->D:\DRS\app\src\main\AndroidManifest.xml:18:9-66
+36-->D:\DRS\app\src\main\AndroidManifest.xml:18:19-54
+37        <!--
+38             The API key for Google Maps-based APIs is defined as a string resource.
+39             (See the file "res/values/google_maps_api.xml").
+40             Note that the API key is linked to the encryption key used to sign the APK.
+41             You need a different API key for each encryption key, including the release key that is used to
+42             sign the APK for publishing.
+43             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+44        -->
+45        <meta-data
+45-->D:\DRS\app\src\main\AndroidManifest.xml:27:9-29:55
+46            android:name="com.google.android.geo.API_KEY"
+46-->D:\DRS\app\src\main\AndroidManifest.xml:28:13-58
+47            android:value="@string/google_maps_key" />
+47-->D:\DRS\app\src\main\AndroidManifest.xml:29:13-52
+48
+49        <activity
+49-->D:\DRS\app\src\main\AndroidManifest.xml:31:9-39:20
+50            android:name="com.example.drs.MapsActivity"
+50-->D:\DRS\app\src\main\AndroidManifest.xml:32:13-41
+51            android:label="@string/title_activity_maps" >
+51-->D:\DRS\app\src\main\AndroidManifest.xml:33:13-56
+52            <intent-filter>
+52-->D:\DRS\app\src\main\AndroidManifest.xml:34:13-38:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->D:\DRS\app\src\main\AndroidManifest.xml:35:17-69
+53-->D:\DRS\app\src\main\AndroidManifest.xml:35:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->D:\DRS\app\src\main\AndroidManifest.xml:37:17-77
+55-->D:\DRS\app\src\main\AndroidManifest.xml:37:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->[com.karumi:dexter:5.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bae70d9a37dc4c54c928b9be25cc781d\jetified-dexter-5.0.0\AndroidManifest.xml:27:9-29:72
+59            android:name="com.karumi.dexter.DexterActivity"
+59-->[com.karumi:dexter:5.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bae70d9a37dc4c54c928b9be25cc781d\jetified-dexter-5.0.0\AndroidManifest.xml:28:13-60
+60            android:theme="@style/Dexter.Internal.Theme.Transparent" /> <!-- Needs to be explicitly declared on P+ -->
+60-->[com.karumi:dexter:5.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bae70d9a37dc4c54c928b9be25cc781d\jetified-dexter-5.0.0\AndroidManifest.xml:29:13-69
+61        <uses-library
+61-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+62            android:name="org.apache.http.legacy"
+62-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+63            android:required="false" />
+63-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ec981d2fbf9058a0ba819396adc840a9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+64
+65        <service
+65-->[com.google.firebase:firebase-database:19.3.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a03dab9e51d9f2df62ea1518e192dc1e\jetified-firebase-database-19.3.1\AndroidManifest.xml:29:9-35:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.firebase:firebase-database:19.3.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a03dab9e51d9f2df62ea1518e192dc1e\jetified-firebase-database-19.3.1\AndroidManifest.xml:30:13-84
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:19.3.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+68            android:exported="false" >
+68-->[com.google.firebase:firebase-database:19.3.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a03dab9e51d9f2df62ea1518e192dc1e\jetified-firebase-database-19.3.1\AndroidManifest.xml:31:13-37
+69            <meta-data
+69-->[com.google.firebase:firebase-database:19.3.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a03dab9e51d9f2df62ea1518e192dc1e\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+70                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+70-->[com.google.firebase:firebase-database:19.3.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a03dab9e51d9f2df62ea1518e192dc1e\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-database:19.3.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a03dab9e51d9f2df62ea1518e192dc1e\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+72        </service>
+73
+74        <activity
+74-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+75            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+75-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+76            android:exported="false"
+76-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+77            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+77-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+78
+79        <provider
+79-->[com.google.firebase:firebase-common:19.3.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+80            android:name="com.google.firebase.provider.FirebaseInitProvider"
+80-->[com.google.firebase:firebase-common:19.3.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+81            android:authorities="com.example.drs.firebaseinitprovider"
+81-->[com.google.firebase:firebase-common:19.3.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+82            android:exported="false"
+82-->[com.google.firebase:firebase-common:19.3.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+83            android:initOrder="100" />
+83-->[com.google.firebase:firebase-common:19.3.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+84
+85        <meta-data
+85-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\aa0b0b1b8ee658361451379d95ea2969\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+86            android:name="com.google.android.gms.version"
+86-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\aa0b0b1b8ee658361451379d95ea2969\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+87            android:value="@integer/google_play_services_version" />
+87-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\aa0b0b1b8ee658361451379d95ea2969\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+88    </application>
+89
+90</manifest>
